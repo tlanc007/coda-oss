@@ -4,6 +4,8 @@
 .DS_Store
 
 # Build artifacts
+#tmp 
+cmBuild
 
 target/
 
