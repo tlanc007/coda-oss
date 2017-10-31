@@ -1,0 +1,9 @@
+#ifndef _SYS_CONFIGH_
+#define _SYS_CONFIG_H_
+
+#cmakedefine HAVE_PTHREAD_H @CMAKE_HAVE_PTHREAD_H@
+#cmakedefine HAVE_EXECINFO_H @HAVE_EXECINFO_H@
+
+#endif // _SYS_CONFIG_H_
+
+
