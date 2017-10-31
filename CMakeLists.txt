@@ -16,6 +16,8 @@ check_library_exists (c clock_gettime "" HAVE_CLOCK_GETTIME)
 check_library_exists (c gettimeofday "" HAVE_SYS_TIME_H)
 check_library_exists (c localtime_r "" HAVE_LOCALTIME_R)
 check_library_exists (c gmtime_r "" HAVE_GMTIME_R)
+check_library_exists (c setenv "" HAVE_SETENV)
+check_library_exists (c posix_memalign "" HAVE_POSIX_MEMALIGN)
 
 include (CMakeBackwardCompatibilityCXX)
 include (CMakeBackwardCompatibilityC)
@@ -28,8 +30,6 @@ set (CMAKE_CXX_FLAGS -std=c++14)
 
 ##hacky set up defines for now
 ## this is to replace the sys/sys_config.h file that is generate
-##add_definitions(-DHAVE_SETENV=1)
-##add_definitions(-DHAVE_POSIX_MEMALIGN=1)
 ##add_definitions(-D__CODA_CPP11=1)
 
 enable_testing ()
