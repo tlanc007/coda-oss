@@ -20,5 +20,5 @@ include (CMakeBackwardCompatibilityC)
 set(BIGENDIAN  ${CMAKE_WORDS_BIGENDIAN})
 set(SIZEOF_SIZE_T ${CMAKE_SIZEOF_VOID_P})
 # eventually move to sys_config.h?
-CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/sys_config.h.in ${CMAKE_CURRENT_BINARY_DIR}/sys_config.h)
+CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/sys_config.h.in ${CMAKE_CURRENT_BINARY_DIR}/sys/sys_config.h)
 
