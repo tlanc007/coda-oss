@@ -1,7 +1,8 @@
 #Determine C++ standard to build with
 
+
 if (NOT PRECXX11)
-    message("Post CXX11")
+    message("Post C++11 or greater")
     set (__CODA_CPP11 1)
     #set(needed_features cxx_constexpr)
 
