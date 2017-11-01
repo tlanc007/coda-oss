@@ -3,9 +3,15 @@ cmake_minimum_required(VERSION 3.0)
 project (coda-oss C CXX)
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake/modules")
-include (coda-ossBuildSysConfig)
 
-set (CMAKE_CXX_FLAGS -std=c++14)
+# 1. must come first
+## set CXX version
+set(PRECXX11 OFF CACHE BOOL "Use pre-c++11 compiler" FORCE)
+
+#2. must come before BuildSysConfig
+include (coda-ossSetCXXSTD)
+
+include (coda-ossBuildSysConfig)
 
 ##hacky set up defines for now
 ## this is to replace the sys/sys_config.h file that is generate

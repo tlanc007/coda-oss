@@ -13,6 +13,8 @@
 #cmakedefine SIZEOF_SIZE_T @CMAKE_SIZEOF_VOID_P@
 #cmakedefine BIGENDIAN @CMAKE_WORDS_BIGENDIAN@
 
+#cmakedefine __CODA_CPP11 @__CODA_CPP11@
+
 #endif // _SYS_CONFIG_H_
 
 
